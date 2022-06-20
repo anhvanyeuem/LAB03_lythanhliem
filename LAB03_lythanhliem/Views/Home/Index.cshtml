@@ -1,0 +1,15 @@
+﻿@model IEnumerable<LAB03_lythanhliem.Models.Course>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <ul>
+        @foreach (var item in Model)
+            {
+                <li>
+                    @item.DateTime - @item.Lecturer.Name
+                </li>
+            }
+    </ul>   
+</div>
